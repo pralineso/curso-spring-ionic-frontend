@@ -22,6 +22,6 @@ export class HomePage {
   }
 
   login(){
-    this.navCtrl.setRoot('CategoriasPage');//com setRoot so manda pra outra pagina sem chance de voltar pra tras auto kkk
+    this.navCtrl.setRoot('CategoriasPage');
   }
 }

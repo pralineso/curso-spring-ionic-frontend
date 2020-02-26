@@ -8,5 +8,13 @@
 </ion-header>
 
 <ion-content padding>
-<p>Página de categorias</p>
+  <ion-list>
+    <button ion-item *ngFor="let item of items">
+      <!-- ngFor é um diretiva que faz a magica aki, pra repetir cada item q ta la em items do cateofias.ts -->
+      <ion-thumbnail item-start>
+        <img src="{{bucketUrl}}/cat{{item.id}}.jpg">
+      </ion-thumbnail>
+      <h2>{{ item.nome }}</h2>
+    </button>
+  </ion-list>
 </ion-content>

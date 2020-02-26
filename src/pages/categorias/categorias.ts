@@ -30,12 +30,10 @@ export class CategoriasPage {
 
   ionViewDidLoad() {
     this.categoriaService.findAll()
-    .subscribe(response => {//primeira funçao pr quando der td certo
+    .subscribe(response => {
       this.items = response;
     },
-    error => {//funcao q se der B.O
-      console.log(error);
-    });
+    error => {});
 
     
   }

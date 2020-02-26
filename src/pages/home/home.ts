@@ -12,4 +12,8 @@ export class HomePage {
 
   }
 
+  login(){
+//  this.navCtrl.push('CategoriasPage'); //com push empilha ne ai ja dixa com a setinha de voltar auto
+    this.navCtrl.setRoot('CategoriasPage');//com setRoot so manda pra outra pagina sem chance de voltar pra tras auto kkk
+  }
 }

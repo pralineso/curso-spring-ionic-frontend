@@ -22,9 +22,9 @@ export class ErrorInterceptor implements HttpInterceptor {
                 errorObj = errorObj.error;
             }
 
-            // if(!errorObj.status){
-            //     errorObj = JSON.parse(errorObj);
-            // }
+             if(!errorObj.status){
+                 errorObj = JSON.parse(errorObj);
+             }
 
             console.log("Erro detectado pelo interceptor:");
             console.log(errorObj);

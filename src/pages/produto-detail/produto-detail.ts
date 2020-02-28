@@ -26,7 +26,7 @@ item: ProdutoDTO[];
     let produto_id = this.navParams.get('produto_id');
     this.produtoService.findById(produto_id)
       .subscribe(response => {
-        this.item = response;//fazer aki igual la em pick-address.ts//temq  olhar no cod o retorno certinho
+        this.item = response;
         this.getImageUrlIfExists();
       },
       error => {});

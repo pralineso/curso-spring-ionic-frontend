@@ -13,7 +13,7 @@ import { CartService } from '../../services/domain/cart.service';
 })
 export class ProdutoDetailPage {
 
-item: ProdutoDTO[];
+item: ProdutoDTO;
 
   constructor(
     public navCtrl: NavController, 

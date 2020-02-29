@@ -1,6 +1,5 @@
 import { Injectable } from "@angular/core";
 import { HttpClient } from "@angular/common/http";
-import { StorageService } from "../storage.service";
 import { PedidoDTO } from "../../models/pedido.dto";
 import { API_CONFIG } from "../../config/api.config";
 
